@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+body{
+    background: #221F1F;
+}
+#section-one{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem;
+    color: white;
+    background: linear-gradient(to bottom, transparent 60%, #221F1F), url(./images/peaky-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section-one .font{
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#section-one h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+#section-one h1{
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+#section-one h3{
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+#section-one .icons{
+    display: flex;
+    align-items: center;
+}
+#section-one .icons button{
+    height: 35px;
+    padding: 3px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(184, 29, 36, 0.6);
+    color: white;
+    font-size: 17px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+#section-one .icons button:hover{
+    background-color: rgba(184, 29, 36, 1);
+}
+#section-one .icons button img{
+    margin-right: 5px;
+}
+#section-one .icons .icon-img{
+    margin-right: 5px;
+    height: 35px;
+}
+#section-one .icons span{
+    background-color: #FBFAFA40;
+    margin-right: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-one .icons span img{
+    height: 20px;
+}
+/* SECOND SECTION */
+#section-two{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 3rem;
+}
+#section-two .left{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#section-two h1{
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+#section-two .green{
+    color: #1F9C1F;
+    margin-right: 10px;
+}
+#section-two h1 img{
+    margin-left: 10px;
+    height: 15px;
+}
+#section-two .pg{
+    font-size: 17px;
+    border: 1px solid white;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#section-two .info{
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    width: 95%;
+}
+#section-two .right{
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#section-two .right .row{
+    display: flex;
+    margin-bottom: 15px;
+}
+#section-two .right .row h3{
+    line-height: 24px;
+}
+#section-two .right .odd{
+    color: #D5D6D0;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-right: 5px;
+    text-align: left;
+}
+#section-two .right .even{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-right: 5px;
+    text-align: left;
+}
+/* THIRD SECTION */
+#section-three{
+    min-height: 100vh;
+    padding: 0 3rem;
+    color: white;
+}
+#section-three .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+#section-three .row h1{
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 1.5px; 
+}
+#section-three .row button{
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 8px;
+    color: white;
+    height: 40px;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+#section-three .row-two{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#section-three .row-two h2{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-right: 5px;
+}
+#section-three .pg{
+    font-size: 17px;
+    border: 1px solid white;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+#section-three .row-two h3{
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+#section-three hr{
+    border: 1px solid #BEBEB9;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+#section-three .one,
+#section-three .two{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    padding: 0 3.5rem;
+    cursor: pointer;
+}
+#section-three .one:hover,
+#section-three .two:hover{
+    background: rgba(178, 179, 173, 0.5);
+}
+#section-three .one h1,
+#section-three .two h1{
+    font-size: 50px;
+    margin-right: 5rem;
+}
+#section-three .one img,
+#section-three .two img{
+    height: 150px;
+    width: fit-content;
+    margin-right: 2rem;
+}
+#section-three .one .top,
+#section-three .two .top{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin-bottom: 2.5rem;
+}
+#section-three .one h2,
+#section-three .two h2{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+#section-three .one p,
+#section-three .two p{
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    width: 84%;
+    color: #D5D6D0;
+    line-height: 24px;
+}
