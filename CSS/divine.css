@@ -6,8 +6,6 @@
     max-width: 100%;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
-    /* font-family: 'Comfortaa', cursive;
-    font-family: 'Poppins', sans-serif; */
 }
 body{
     background: #221F1F;
@@ -60,7 +58,6 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1px;
     color: white;
-    /* caret-color: red; */
 }
 #watch .search-bar input::placeholder{
     color: #D5D6D0;
@@ -137,7 +134,7 @@ body{
 }
 #first-slide .one, #first-slide .two, #first-slide .three{
     height: 300px;
-    width: 400px;
+    width: 410px;
     border-radius: 30px;
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -149,7 +146,7 @@ body{
     color: white;
 }
 #first-slide .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Thor-love-and-thunder.png); 
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Thor-love-and-thunder.png); 
     margin-right: 15px;
 }
 #first-slide .one .left,
@@ -237,11 +234,11 @@ body{
     cursor: pointer;
 }
 #first-slide .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Ryan\ Reynolds\ In\ Free\ Guy\ 2020\ 4K\ Ultra\ HD\ Mobile\ Wallpaper.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ryan\ Reynolds\ In\ Free\ Guy\ 2020\ 4K\ Ultra\ HD\ Mobile\ Wallpaper.png);
     margin-right: 15px;
 }
 #first-slide .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Project\ power\ \(2020\)\ -\ Henry\ Joost\,\ Ariel\ Schulman.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Project\ power\ \(2020\)\ -\ Henry\ Joost\,\ Ariel\ Schulman.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -329,15 +326,15 @@ body{
     padding: 1.3rem 1.7rem;
 }
 #second-full .left .cont-watch .one{
-    background: linear-gradient(to bottom, transparent 30%, #181616), url(./images/Joker\ -\ 2019\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Joker\ -\ 2019\ 1.png);
     margin-right: 20px;
 }
 #second-full .left .cont-watch .two{
-    background: linear-gradient(to bottom, transparent 30%, #181616), url(./images/Gangs\ of\ Lagos\ \(2023\)\ Blu-ray\ New\ Box\ Set\ All\ Region\ \ _\ eBay\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Gangs\ of\ Lagos\ \(2023\)\ Blu-ray\ New\ Box\ Set\ All\ Region\ \ _\ eBay\ 1.png);
     margin-right: 20px;
 }
 #second-full .left .cont-watch .three{
-    background: linear-gradient(to bottom, transparent 30%, #181616), url(./images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
 }
 #second-full .left .cont-watch .one .play-btn,
 #second-full .left .cont-watch .two .play-btn,
@@ -436,7 +433,7 @@ body{
     padding: 1.3rem 1.7rem;
 }
 #second-full .right .first-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, #181616), url(./images/Red\ Notice\ \(2021\)\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Red\ Notice\ \(2021\)\ 1.png);
 }
 #second-full .right .first-row .play-btn{
     position: absolute;
@@ -532,7 +529,7 @@ body{
     padding: 1rem;
 }
 #second-full .left .row-two .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
 }
 #second-full .left .bottom .rate{
     background-color: rgb(27, 27, 27);
@@ -605,15 +602,15 @@ body{
     height: 22px;
 }
 #second-full .left .row-two .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Blackout\ \(2022\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Blackout\ \(2022\).png);
     margin: 0 10px;
 }
 #second-full .left .row-two .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Bumblebee.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Bumblebee.png);
     margin: 0 10px 0 0;
 }
 #second-full .left .row-two .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Blackout\ \(2022\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Blackout\ \(2022\).png);
     margin: 0 10px 0 0;   
 }
 
@@ -655,7 +652,7 @@ body{
     padding: 1rem;
 }
 #second-full .right .second-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/bloodshot\ 2020\ 8k\ iPhone\ X\ Wallpapers.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/bloodshot\ 2020\ 8k\ iPhone\ X\ Wallpapers.png);
 }
 #second-full .right .bottom .rate{
     background-color: rgb(27, 27, 27);
@@ -791,7 +788,7 @@ body{
     padding: .5rem;
 }
 #second-full .left .row-three .bottom .one .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
     left: 3.8rem;
 }
 #second-full .left .row-three .bottom h4.title{
@@ -799,25 +796,25 @@ body{
     font-weight: lighter;
 }
 #second-full .left .row-three .bottom .two .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png);
     left: 3.6rem;
 }
 #second-full .left .row-three .bottom .three .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
     background-size: cover;
     left: 3.5rem;
 }
 #second-full .left .row-three .bottom .four .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
     background-size: cover;
     left: 3.8rem;
 }
 #second-full .left .row-three .bottom .five .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
     left: 3.5rem;   
 }
 #second-full .left .row-three .bottom .six .img-div{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
     left: 3.5rem;   
 }
 /* FOURTH ROW - LEFT PART */
@@ -883,19 +880,19 @@ body{
     padding: 1rem;
 }
 #second-full .left .row-four .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png) ;
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png) ;
     margin-right: 15px;
 }
 #second-full .left .row-four .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/poster\ da\ 2\ temporada\ da\ série\ the\ flash\ \(1\)\ \(1\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/poster\ da\ 2\ temporada\ da\ série\ the\ flash\ \(1\)\ \(1\).png);
     margin-right: 15px;
 }
 #second-full .left .row-four .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
     margin-right: 15px;
 }
 #second-full .left .row-four .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Black\ Panther.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Black\ Panther.png);
 }
 /* RIGHT SECTION FOURTH ROW */
 #second-full .right .fourth-row{
@@ -904,7 +901,7 @@ body{
     margin: 20rem 0 2rem 0;
 }
 #second-full .right .fourth-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/2d7ec579-2f91-40a2-aecb-c0fd498acd28.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/2d7ec579-2f91-40a2-aecb-c0fd498acd28.png);
 }
 
 /* ROW FIVE --- LEFT PART */
@@ -914,38 +911,38 @@ body{
     height: 40vh;
 }
 #second-full .left .row-five .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
     margin-right: 15px;
 }
 #second-full .left .row-five .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
     margin-right: 15px;
 }
 #second-full .left .row-five .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/umbrella-academy.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/umbrella-academy.png);
     margin-right: 15px;
 }
 #second-full .left .row-five .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/51fe5c8d-77a6-42a9-8829-a655115a0e86.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/51fe5c8d-77a6-42a9-8829-a655115a0e86.png);
 }
 /* FIFTH TO TENTH ROW -- RIGHT PART */
 #second-full .right .fifth-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/The\ Adam\ Project.png);    
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Adam\ Project.png);    
 }
 #second-full .right .sixth-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/shanty-town.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/shanty-town.png);
 }
 #second-full .right .seventh-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Renfield\ \(2023\).png);  
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Renfield\ \(2023\).png);  
 }
 #second-full .right .eight-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Black\ Panther.png);    
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Black\ Panther.png);    
 }
 #second-full .right .ninth-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/LUTHER_\ THE\ FALLEN\ SUN\ \(2023\)\ -\ Trailers\,\ Images\ and\ Posters.png);    
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/LUTHER_\ THE\ FALLEN\ SUN\ \(2023\)\ -\ Trailers\,\ Images\ and\ Posters.png);    
 }
 #second-full .right .tenth-row .bottom{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/The\ Pope’s\ Exorcist\ gets\ first\ trailer\ teasing\ more\ than\ an\ ordinary\ exorcism\ movie.png);    
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Pope’s\ Exorcist\ gets\ first\ trailer\ teasing\ more\ than\ an\ ordinary\ exorcism\ movie.png);    
 }
 /* ROW SIX -- LET PART */
 #second-full .left .row-six,
@@ -958,84 +955,84 @@ body{
     height: 40vh;
 }
 #second-full .left .row-six .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Trailer\ For\ The\ 50th\ Anniversary\ Re-Release\ of\ Francis\ Ford\ Coppola\'s\ THE\ GODFATHER\ —\ GeekTyrant.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Trailer\ For\ The\ 50th\ Anniversary\ Re-Release\ of\ Francis\ Ford\ Coppola\'s\ THE\ GODFATHER\ —\ GeekTyrant.png);
     margin-right: 15px;
 }
 #second-full .left .row-six .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/PEAKY\ BLINDERS.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/PEAKY\ BLINDERS.png);
     margin-right: 15px;
 }
 #second-full .left .row-six .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/The\ Tax\ Collector\ \(2020\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Tax\ Collector\ \(2020\).png);
     margin-right: 15px;
 }
 #second-full .left .row-six .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/King\ Of\ Boys_\ The\ Return\ Of\ The\ King\ _\ Complete\ Season\ 1\ Download\ 720p\ HD\ -\ Plushng.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/King\ Of\ Boys_\ The\ Return\ Of\ The\ King\ _\ Complete\ Season\ 1\ Download\ 720p\ HD\ -\ Plushng.png);
     /* margin-right: 15px; */
 }
 /* ROW SEVEN -- LEFT PART */
 #second-full .left .row-seven .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Castlevania\ season\ 4\ official\ poster\ revealed\ by\ Netflix!!.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Castlevania\ season\ 4\ official\ poster\ revealed\ by\ Netflix!!.png);
     margin-right: 15px;
 }
 #second-full .left .row-seven .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Levi\ Ackermann\ \(Anime\)_Image\ Gallery.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Levi\ Ackermann\ \(Anime\)_Image\ Gallery.png);
     margin-right: 15px;
 }
 #second-full .left .row-seven .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Fire\ Force\ Lights\ up\ Its\ Second\ Cour\ Key\ Visual.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Fire\ Force\ Lights\ up\ Its\ Second\ Cour\ Key\ Visual.png);
     margin-right: 15px;
 }
 #second-full .left .row-seven .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Amazon_com_\ Diamond\ Painting\ Kits\ for\ Adults\ DIY\ Anime\ Demon\ Slayer\ Diamond\ Art\ 5D\ Paint\ with\ Diamonds\ Full\ Drill\ Gem\ Art\ Cross\ Stitch\ Arts\ Embroidery\,\ Home\ Wall\ Decoration\ 12_\ X\ 16_.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Amazon_com_\ Diamond\ Painting\ Kits\ for\ Adults\ DIY\ Anime\ Demon\ Slayer\ Diamond\ Art\ 5D\ Paint\ with\ Diamonds\ Full\ Drill\ Gem\ Art\ Cross\ Stitch\ Arts\ Embroidery\,\ Home\ Wall\ Decoration\ 12_\ X\ 16_.png);
 }
 /* ROW EIGHT -- LEFT PART */
 #second-full .left .row-eight .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
     margin-right: 15px;
 }
 #second-full .left .row-eight .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/sandman.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/sandman.png);
     margin-right: 15px;
 }
 #second-full .left .row-eight .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/Morbius\ \(film\).png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Morbius\ \(film\).png);
     margin-right: 15px;
 }
 #second-full .left .row-eight .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/arcane\ secret\ cinema\ poster\,\ league\ of\ legends\ netflix.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/arcane\ secret\ cinema\ poster\,\ league\ of\ legends\ netflix.png);
 }
 /* ROW NINE -- LEFT PART */
 #second-full .left .row-nine .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/VENOM.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/VENOM.png);
     margin-right: 15px;
 }
 #second-full .left .row-nine .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/unchattered.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/unchattered.png);
     margin-right: 15px;
 }
 #second-full .left .row-nine .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/extraction.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/extraction.png);
     margin-right: 15px;
 }
 #second-full .left .row-nine .bottom .four{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/bullet\ train.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/bullet\ train.png);
 }
 /* ROW TEN -- LEFT PART */
 #second-full .left .row-ten .bottom .one{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/365-this-day.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/365-this-day.png);
     margin-right: 15px;
 }
 #second-full .left .row-ten .bottom .two{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/THE\ LAST\ KINGDOM\ 1.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/THE\ LAST\ KINGDOM\ 1.png);
     margin-right: 15px;
 }
 #second-full .left .row-ten .bottom .three{
-    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(./images/london-has-fallen.png);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/london-has-fallen.png);
     margin-right: 15px;
 }
 #second-full .left .row-ten .bottom .four{
-    background: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.9) 80%), url(./images/fasle\ step.png);
+    background: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.9) 80%), url(../images/fasle\ step.png);
 
 }
 /* FOOTER */

@@ -1,0 +1,271 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-text{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    Letter-Spacing : 0%;
+    Text-Decoration : none;
+    color: black;
+    position: relative;
+}
+.header-text::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #e50914;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.header-text:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.bar-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #535351;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0 33px;
+}
+
+.main-container2 {
+    margin: 0 auto;
+    width : 100%;
+    min-height: 120vh;
+}
+  
+.img-netflix2 img{
+    height: 25px;
+}
+
+.header-big-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width : 85%;
+    gap: 15px;
+}
+
+.header-big-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 57px;
+    line-height: 64px;
+    Letter-Spacing : -0.25%;
+    Text-Decoration : none;
+    Paragraph-Spacing : 0px;
+}
+
+.header-small-text{
+    
+    gap: 10px;
+}
+
+.text-small{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-color: #535351;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px;
+}
+
+.small-box{
+    width: 150px;
+    height: 150px;
+    background-color: #fa4a53;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.box{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 33px;
+    gap: 30px;
+}
+
+
+.small-box h5{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.small-box-diff{
+    width: 150px;
+    height: 150px;
+    background-color: #e50914;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.small-box-diff i{
+    position: relative;
+    top: 77px;
+    right: 50px;
+
+}
+
+.small-box-diff h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+    position: relative;
+    
+    left: 10px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 103px;
+    width : 91%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.price-bar{
+    display: flex;
+    gap : 10px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.price-bar-big{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    Letter-Spacing : 0%;
+    Text-Decoration : none;
+    Paragraph-Spacing : 0px;
+    margin-bottom: 10px;
+}
+
+.price-bar3{
+    
+    width: 165px;
+    color: #e50914;
+    display: flex;
+    justify-content: center; 
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    Letter-Spacing : 0%;
+    Text-Decoration : none;
+    Paragraph-Spacing : 0px;
+}
+
+.price-bar2{
+    
+    width: 160px;
+    
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    Letter-Spacing : 0%;
+    Text-Decoration : none;
+    Paragraph-Spacing : 0px;
+    
+}
+
+.price-bar1{
+    display: flex;
+    
+    
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    Letter-Spacing : 0%;
+    Text-Decoration : none;
+    Paragraph-Spacing : 0px;
+}
+
+.price-bar1 i{
+    position: relative;
+    top: 15px;
+    right:0px;
+}
+
+.price-bar2 i{
+    position: relative;
+    top: 15px;
+    right:0px;
+}
+
+.price-bar3 i{
+    position: relative;
+    top: 15px;
+    right:0px;
+}
+
+#price-bar1{
+    position: relative;
+    bottom: 20px;
+}
+
+#price-bar2{
+    position: relative;
+    bottom: 10px;
+}
+
+#price-bar3{
+    position: relative;
+    bottom: 10px;
+}
+
+.main-container {
+    margin: 0 auto;
+    display : flex;
+
+    box-sizing: border-box;
+  }

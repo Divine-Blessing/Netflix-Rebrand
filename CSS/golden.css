@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-image: url(./images/page-image.png);
+    background-image: url(../images/page-image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -60,6 +60,7 @@ nav button img{
 .main-container h1{
     color: white;
     font-size: 45px;
+    line-height: 45px;
     font-weight: 500;
     width: 60%;
     text-align: center;
@@ -78,9 +79,9 @@ input{
     outline: none;
     background-color: white;
     height: 50px;
-    width: 480px;
+    width: 450px;
     padding-left: 10px;
-    margin-right: 8px;
+    margin-right: 0px;
 }
 input::placeholder{
     color: rgba(0, 0, 0, 0.5);
@@ -95,9 +96,32 @@ form button{
     font-size: 20px;
     text-align: center;
     cursor: pointer;
-
+    margin-left: 0;
 }
 form button img{
+    height: 15px;
+    margin-left: 8px;
+}
+form a{
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form a:hover{
+    background-color: #e5091479;
+}
+form a img{
     height: 15px;
     margin-left: 8px;
 }
