@@ -127,7 +127,7 @@ a{
 .thor{
     display:flex;
     flex-direction: column;
-    background: url("/images/thor-love-and-thunder.jpg");
+    background: url("../images/thor-love-and-thunder.jpg");
     width: 842px;
     height: 333px;
     background-size: cover;
@@ -201,7 +201,7 @@ a{
 .movie-card1{
     display: flex;
     flex-direction: column;
-    background: url("/images/flash.jpg");
+    background: url("../images/flash.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -213,7 +213,7 @@ a{
 .movie-card2{
     display: flex;
     flex-direction: column;
-    background: url("/images/stranger things.jpg");
+    background: url("../images/stranger\ things.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -224,7 +224,7 @@ a{
 
 
 .movie-card3{
-    background: url("/images/ant-man_.jpg");
+    background: url("../images/ant-man_.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -236,7 +236,7 @@ a{
 }
 
 .movie-card4{
-    background: url("/images/johnwick.jpg");
+    background: url("../images/johnwick.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -251,7 +251,7 @@ a{
 .movie-card11{
     display: flex;
     flex-direction: column;
-    background: url("/images/M3GAN_Poster.jpeg");
+    background: url("../images/M3GAN_Poster.jpeg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -263,7 +263,7 @@ a{
 .movie-card22{
     display: flex;
     flex-direction: column;
-    background: url("/images/Black_Panther.jpg");
+    background: url("../images/Black_Panther.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -274,7 +274,7 @@ a{
 
 
 .movie-card33{
-    background: url("/images/transformer.jpg");
+    background: url("../images/transformer.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
@@ -286,7 +286,7 @@ a{
 }
 
 .movie-card44{
-    background: url("/images/fast x.jpg");
+    background: url("../images/fast\ x.jpg");
     background-size: cover;
     width: 200px;
     height: 300px;
