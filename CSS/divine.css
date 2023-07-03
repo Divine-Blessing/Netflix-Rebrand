@@ -1,0 +1,1147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+body{
+    background: #221F1F;
+}
+/* BEGINNING OF PAGE LOADER */
+#preloader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+}
+#preloader .ring{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #E50914;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #b65358;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #a5171e;
+    }
+}
+#preloader .ring::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+#preloader .load{
+    color: rgb(161, 161, 161);
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text{
+    50%{
+        color: black;
+    }
+}
+/* END OF PRELOADER */
+/* THE NAVBAR */
+#watch{
+    min-height: 14vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+#watch .logo{
+    height: 28px;
+    margin-right: 2rem;
+}
+#watch .links a{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 10px;
+    color: #BEBEB9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#watch .links a:hover{
+    color: white;
+    transition: 150ms ease-in-out;
+}
+#watch .links .active-link{
+    color: white;
+}
+#watch .search-bar{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 0 4rem;
+    border-radius: 50px;
+    background-color: #181616;
+    display: flex;
+    align-items: center;
+}
+#watch .search-bar input{
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0 20px;
+    font-size: 17px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+#watch .search-bar input::placeholder{
+    color: #D5D6D0;
+    font-size: 13px;
+}
+#watch .search-bar button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#watch .search-bar button img{
+    aspect-ratio: 2/2;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
+}
+#watch .search-bar button img:hover{
+    transform: scale(0.8);
+}
+#watch .icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 28%;
+}
+#watch .icons img{
+    margin-right: 28px;
+    cursor: pointer;
+}
+#watch .icons img:nth-child(1),
+#watch .icons img:nth-child(2),
+#watch .icons img:nth-child(3),
+#watch .icons img:nth-child(5){
+    transform: scale(1);
+    transition: transform 150ms ease-in-out;
+}
+#watch .icons img:nth-child(1):hover,
+#watch .icons img:nth-child(2):hover,
+#watch .icons img:nth-child(3):hover,
+#watch .icons img:nth-child(5):hover{
+    transform: scale(0.8);
+}
+#watch .icons .photo{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#watch .icons .down-arrow{
+    height: 18px;
+}
+.abs-img-span{
+    position: absolute;
+    right: 3rem;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* THE FIRST SECTION---SLIDE SHOW */
+#first-slide{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 2rem;
+}
+#first-slide .one, #first-slide .two, #first-slide .three{
+    height: 300px;
+    width: 410px;
+    border-radius: 30px;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.3rem;
+    color: white;
+}
+#first-slide .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Thor-love-and-thunder.png); 
+    margin-right: 15px;
+}
+#first-slide .one .left,
+#first-slide .two .left,
+#first-slide .three .left{
+    width: 60%;
+} 
+#first-slide .one .movie-title,
+#first-slide .two .movie-title,
+#first-slide .three .movie-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: 'Bebas Neue', sans-serif;
+}
+#first-slide .one .movie-year,
+#first-slide .two .movie-year,
+#first-slide .three .movie-year{
+    font-size: 15px;
+    margin: 3px 0;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: 'Bebas Neue', sans-serif;
+}
+#first-slide span{
+    display: flex;
+    align-items: center;
+}
+#first-slide .one span img,
+#first-slide .two span img,
+#first-slide .three span img{
+    height: 18px;
+    margin-right: 8px;
+}
+#first-slide .one span .rating,
+#first-slide .two span .rating,
+#first-slide .three span .rating{
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+#first-slide .one .right,
+#first-slide .two .right,
+#first-slide .three .right{
+    width: 40%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+#first-slide .right button{
+    background: rgba(184, 29, 36, 0.6);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* CONTINUE TODAY!!!!!!!!!!!!!!1 */
+#first-slide .two .right button:hover,
+#first-slide .one .right button:hover,
+#first-slide .three .right button:hover,
+#first-slide .four .right button:hover{
+    background-color: rgba(184, 29, 36, 0.8);
+}
+#first-slide .one .right button img,
+#first-slide .two .right button img,
+#first-slide .three .right button img{
+    margin-left: 5px;
+    height: 15px;
+}
+#first-slide .one .right .play-img,
+#first-slide .two .right .play-img,
+#first-slide .three .right .play-img{
+    height: 25px;
+    cursor: pointer;
+}
+#first-slide .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ryan\ Reynolds\ In\ Free\ Guy\ 2020\ 4K\ Ultra\ HD\ Mobile\ Wallpaper.png);
+    margin-right: 15px;
+}
+#first-slide .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Project\ power\ \(2020\)\ -\ Henry\ Joost\,\ Ariel\ Schulman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* TRIAL AND ERROR */
+/* .slide-arrow-left{
+    transform: rotate(180deg);
+    left: 2.5rem;
+}
+.slide-arrow-right, .slide-arrow-left{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 2.5rem;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.6);
+} */
+/* SECOND SECTION */
+#second-full{
+    min-height: 420vh;
+    display: flex;
+    color: white;
+    padding-left: 40px;
+    position: relative;
+}
+#second-full .left{
+    width: 70%;
+    min-height: 100%;
+}
+#second-full .left .row-one{
+    width: 95%;
+    /* overflow-x: scroll; */
+    margin-top: 2rem;
+    height: 40vh;
+}
+#second-full .left .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+#second-full .left .top h1{
+    font-weight: lighter;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#second-full .left .top h2{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+#second-full .left .top h2 img{
+    height: 18px;
+    margin-left: 3px;
+}
+#second-full .left .cont-watch{
+    height: 30vh;
+    display: flex;
+}
+#second-full .left .cont-watch .one,
+#second-full .left .cont-watch .two,
+#second-full .left .cont-watch .three{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 200px;
+    width: 320px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.3rem 1.7rem;
+}
+#second-full .left .cont-watch .one{
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Joker\ -\ 2019\ 1.png);
+    margin-right: 20px;
+}
+#second-full .left .cont-watch .two{
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Gangs\ of\ Lagos\ \(2023\)\ Blu-ray\ New\ Box\ Set\ All\ Region\ \ _\ eBay\ 1.png);
+    margin-right: 20px;
+}
+#second-full .left .cont-watch .three{
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
+}
+#second-full .left .cont-watch .one .play-btn,
+#second-full .left .cont-watch .two .play-btn,
+#second-full .left .cont-watch .three .play-btn{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#second-full .left .cont-watch .one img,
+#second-full .left .cont-watch .two img,
+#second-full .left .cont-watch .three img{
+    height: 22px;
+}
+#second-full .left .cont-watch .one .movie-title,
+#second-full .left .cont-watch .two .movie-title,
+#second-full .left .cont-watch .three .movie-title{
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 22px;
+}
+#second-full .left .cont-watch .one .movie-date,
+#second-full .left .cont-watch .two .movie-date,
+#second-full .left .cont-watch .three .movie-date{
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin-bottom: 1.4rem;
+}
+#second-full .left .cont-watch .one .movie-length,
+#second-full .left .cont-watch .two .movie-length,
+#second-full .left .cont-watch .three .movie-length{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 13px;
+}
+#second-full .left .cont-watch .one .movie-length .line,
+#second-full .left .cont-watch .two .movie-length .line,
+#second-full .left .cont-watch .three .movie-length .line{
+    height: 4px;
+    width: 70%;
+    border-radius: 50px;
+    background-color: #fbfafa5d;
+}
+#second-full .left .cont-watch .one .movie-length .line .line-in-line,
+#second-full .left .cont-watch .two .movie-length .line .line-in-line,
+#second-full .left .cont-watch .three .movie-length .line .line-in-line{
+    height: 4px;
+    width: 50%;
+    border-radius: 50px;
+    background-color: white;
+    z-index: 1;
+}
+/* THE RIGHT PART -- FIRST ROW */
+#second-full .right{
+    width: 30%;
+    min-height: 100%;
+    background-color: #181616;
+}
+#second-full .right .first-row{
+    height: 40vh;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 2.7rem;
+}
+/* for all the tops in the right section */
+#second-full .right .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+}
+#second-full .right .first-row .bottom{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.3rem 1.7rem;
+}
+#second-full .right .first-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, #181616), url(../images/Red\ Notice\ \(2021\)\ 1.png);
+}
+#second-full .right .first-row .play-btn{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#second-full .right .first-row .play-btn img{
+    height: 22px;
+}
+#second-full .right .top h1{
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#second-full .right .top .see{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+#second-full .right .top .see img{
+    height: 18px;
+    margin-left: 3px;
+}
+#second-full .right .first-row .bottom .movie-title{
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 22px;
+}
+#second-full .right .first-row .bottom .movie-date{
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin-bottom: 1.4rem;
+}
+#second-full .right .first-row .bottom .movie-length{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    font-size: 13px;
+}
+#second-full .right .first-row .bottom .movie-length .line{
+    height: 4px;
+    width: 70%;
+    border-radius: 50px;
+    background-color: #fbfafa5d;
+}
+#second-full .right .first-row .bottom .movie-length .line .line-in-line{
+    height: 4px;
+    width: 5%;
+    border-radius: 50px;
+    background-color: white;
+    z-index: 1;
+}
+
+/* SECOND ROW -- LEFT PART */
+#second-full .left .row-two{
+    margin: 2rem 0;
+    width: 95%;
+    height: 40vh;
+}
+#second-full .left .top{
+    margin-bottom: 2rem;
+}
+#second-full .left .row-two .bottom{    
+    display: flex;
+    height: 30vh;
+}
+#second-full .left .row-two .bottom .one,
+#second-full .left .row-two .bottom .two,
+#second-full .left .row-two .bottom .three,
+#second-full .left .row-two .bottom .four{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 200px;
+    width: 250px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#second-full .left .row-two .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
+}
+#second-full .left .bottom .rate{
+    background-color: rgb(27, 27, 27);
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#second-full .left .bottom .rate img{
+    height: 10px;
+    margin-right: 2px;
+}
+#second-full .left .bottom .down h2{
+    font-weight: lighter;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+#second-full .left .bottom .down h3{
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#second-full .left .bottom .down button.play{
+    border: none;
+    outline: none;
+    background-color: rgba(184, 29, 36, 0.6);
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0px 20px;
+    border-radius: 40px;
+    font-size: 17px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+#second-full .left .bottom .down button.play:hover{
+    background-color: rgba(184, 29, 36, 1);
+}
+#second-full .left .bottom .down button.play img{
+    height: 16px;
+    margin-left: 3px;
+}
+#second-full .left .bottom .down-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+#second-full .left .bottom .down-row .icon-row{
+    display: flex;
+    align-items: center;
+}
+#second-full .left .icon-row .info-span{
+    margin-left: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second-full .left .icon-row .info-span .info-img{
+    height: 22px;
+}
+#second-full .left .row-two .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Blackout\ \(2022\).png);
+    margin: 0 10px;
+}
+#second-full .left .row-two .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Bumblebee.png);
+    margin: 0 10px 0 0;
+}
+#second-full .left .row-two .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Blackout\ \(2022\).png);
+    margin: 0 10px 0 0;   
+}
+
+/* ROW-TWO -- RIGHT SECTION -- BOOKMARKED */
+#second-full .right .second-row,
+#second-full .right .fourth-row,
+#second-full .right .fifth-row,
+#second-full .right .sixth-row,
+#second-full .right .seventh-row,
+#second-full .right .eight-row,
+#second-full .right .ninth-row,
+#second-full .right .tenth-row{
+    height: 40vh;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 2.7rem;
+}
+#second-full .left .row-two .bottom .two,
+#second-full .left .row-two .bottom .three,
+#second-full .left .row-two .bottom .four,
+#second-full .right .second-row .bottom,
+#second-full .right .fourth-row .bottom,
+#second-full .right .fifth-row .bottom,
+#second-full .right .sixth-row .bottom,
+#second-full .right .seventh-row .bottom,
+#second-full .right .eight-row .bottom,
+#second-full .right .ninth-row .bottom,
+#second-full .right .tenth-row .bottom{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#second-full .right .second-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/bloodshot\ 2020\ 8k\ iPhone\ X\ Wallpapers.png);
+}
+#second-full .right .bottom .rate{
+    background-color: rgb(27, 27, 27);
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#second-full .right .bottom .rate img{
+    height: 10px;
+    margin-right: 2px;
+}
+#second-full .right .bottom .down h2{
+    font-weight: lighter;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+#second-full .right .bottom .down h3{
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#second-full .right .bottom .down .play{
+    border: none;
+    outline: none;
+    background-color: rgba(184, 29, 36, 0.6);
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0px 20px;
+    border-radius: 40px;
+    font-size: 17px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+#second-full .right .bottom .down .play:hover{
+    background-color: rgba(184, 29, 36, 1);
+}
+#second-full .right .bottom .play img{
+    height: 16px;
+    margin-left: 3px;
+}
+#second-full .right .bottom .down-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#second-full .right .bottom .down-row .icon-row{
+    display: flex;
+    align-items: center;
+}
+#second-full .right .icon-row .info-span{
+    margin-left: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second-full .right .icon-row .info-span .info-img{
+    height: 22px;
+}
+
+/* THIRD ROW -- LEFT SECTION */
+#second-full .left .row-three{
+    z-index: 1;
+    width: 93%;
+    margin-bottom: 2rem;
+    position: absolute;
+}
+#second-full .row-three .abs-img-span{
+    position: absolute;
+    right: 1rem;
+    top: 8rem;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second-full .left .row-three .bottom{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 35vh;
+}
+#second-full .left .row-three .bottom .one,
+#second-full .left .row-three .bottom .two,
+#second-full .left .row-three .bottom .three,
+#second-full .left .row-three .bottom .four,
+#second-full .left .row-three .bottom .five,
+#second-full .left .row-three .bottom .six{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 200px;
+    position: relative;
+    margin-right: 1rem;
+}
+#second-full .left .row-three .bottom h6.stroke{
+    font-size: 220px;
+    -webkit-text-stroke: 4px white;
+    -webkit-text-fill-color: black;
+}
+#second-full .left .row-three .bottom .one .img-div,
+#second-full .left .row-three .bottom .two .img-div,
+#second-full .left .row-three .bottom .three .img-div,
+#second-full .left .row-three .bottom .four .img-div,
+#second-full .left .row-three .bottom .five .img-div,
+#second-full .left .row-three .bottom .six .img-div{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 180px;
+    width: 140px;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: .5rem;
+}
+#second-full .left .row-three .bottom .one .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
+    left: 3.8rem;
+}
+#second-full .left .row-three .bottom h4.title{
+    font-size: 16px;
+    font-weight: lighter;
+}
+#second-full .left .row-three .bottom .two .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png);
+    left: 3.6rem;
+}
+#second-full .left .row-three .bottom .three .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/the\ man\ from\ toronto\ -\ Google\ Search\ 1.png);
+    background-size: cover;
+    left: 3.5rem;
+}
+#second-full .left .row-three .bottom .four .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
+    background-size: cover;
+    left: 3.8rem;
+}
+#second-full .left .row-three .bottom .five .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    left: 3.5rem;   
+}
+#second-full .left .row-three .bottom .six .img-div{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    left: 3.5rem;   
+}
+/* FOURTH ROW - LEFT PART */
+#second-full .left .row-four{
+    width: 95%;
+    height: 40vh;
+    margin: 20rem 0 2rem 0;
+}
+#second-full .left .row-four .bottom,
+#second-full .left .row-five .bottom,
+#second-full .left .row-six .bottom,
+#second-full .left .row-seven .bottom,
+#second-full .left .row-eight .bottom,
+#second-full .left .row-nine .bottom,
+#second-full .left .row-ten .bottom{
+    display: flex;
+}
+#second-full .left .row-four .bottom .one,
+#second-full .left .row-four .bottom .two,
+#second-full .left .row-four .bottom .three,
+#second-full .left .row-four .bottom .four,
+/* ROW FIVE */
+#second-full .left .row-five .bottom .one,
+#second-full .left .row-five .bottom .two,
+#second-full .left .row-five .bottom .three,
+#second-full .left .row-five .bottom .four,
+/* ROW SIX */
+#second-full .left .row-six .bottom .one,
+#second-full .left .row-six .bottom .two,
+#second-full .left .row-six .bottom .three,
+#second-full .left .row-six .bottom .four,
+/* ROW SEVEN */
+#second-full .left .row-seven .bottom .one,
+#second-full .left .row-seven .bottom .two,
+#second-full .left .row-seven .bottom .three,
+#second-full .left .row-seven .bottom .four,
+/* ROW EIGHT */
+#second-full .left .row-eight .bottom .one,
+#second-full .left .row-eight .bottom .two,
+#second-full .left .row-eight .bottom .three,
+#second-full .left .row-eight .bottom .four,
+/* ROW NINE */
+#second-full .left .row-nine .bottom .one,
+#second-full .left .row-nine .bottom .two,
+#second-full .left .row-nine .bottom .three,
+#second-full .left .row-nine .bottom .four,
+/* ROW TEN */
+#second-full .left .row-ten .bottom .one,
+#second-full .left .row-ten .bottom .two,
+#second-full .left .row-ten .bottom .three,
+#second-full .left .row-ten .bottom .four
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 200px;
+    width: 250px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#second-full .left .row-four .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/\'Stranger\ Things\ S1\ Boys\'\ Poster\ by\ Stranger\ Things\ Series\ \ _\ Displate.png) ;
+    margin-right: 15px;
+}
+#second-full .left .row-four .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/poster\ da\ 2\ temporada\ da\ série\ the\ flash\ \(1\)\ \(1\).png);
+    margin-right: 15px;
+}
+#second-full .left .row-four .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Ant-Man\ and\ the\ Wasp_\ Quantumania.png);
+    margin-right: 15px;
+}
+#second-full .left .row-four .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Black\ Panther.png);
+}
+/* RIGHT SECTION FOURTH ROW */
+#second-full .right .fourth-row{
+    width: 95%;
+    height: 40vh;
+    margin: 20rem 0 2rem 0;
+}
+#second-full .right .fourth-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/2d7ec579-2f91-40a2-aecb-c0fd498acd28.png);
+}
+
+/* ROW FIVE --- LEFT PART */
+#second-full .left .row-five{
+    margin: 2rem 0;
+    width: 95%;
+    height: 40vh;
+}
+#second-full .left .row-five .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/56ed118b-c1b8-42fa-affb-ea7af9376b00.png);
+    margin-right: 15px;
+}
+#second-full .left .row-five .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Moon\ Knight\ \(2022\)\ -\ Moon\ Knight\ Official\ Poster\ \(xlg\).png);
+    margin-right: 15px;
+}
+#second-full .left .row-five .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/umbrella-academy.png);
+    margin-right: 15px;
+}
+#second-full .left .row-five .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/51fe5c8d-77a6-42a9-8829-a655115a0e86.png);
+}
+/* FIFTH TO TENTH ROW -- RIGHT PART */
+#second-full .right .fifth-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Adam\ Project.png);    
+}
+#second-full .right .sixth-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/shanty-town.png);
+}
+#second-full .right .seventh-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Renfield\ \(2023\).png);  
+}
+#second-full .right .eight-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Black\ Panther.png);    
+}
+#second-full .right .ninth-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/LUTHER_\ THE\ FALLEN\ SUN\ \(2023\)\ -\ Trailers\,\ Images\ and\ Posters.png);    
+}
+#second-full .right .tenth-row .bottom{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Pope’s\ Exorcist\ gets\ first\ trailer\ teasing\ more\ than\ an\ ordinary\ exorcism\ movie.png);    
+}
+/* ROW SIX -- LET PART */
+#second-full .left .row-six,
+#second-full .left .row-seven,
+#second-full .left .row-eight,
+#second-full .left .row-nine,
+#second-full .left .row-ten{
+    margin: 2rem 0;
+    width: 95%;
+    height: 40vh;
+}
+#second-full .left .row-six .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Trailer\ For\ The\ 50th\ Anniversary\ Re-Release\ of\ Francis\ Ford\ Coppola\'s\ THE\ GODFATHER\ —\ GeekTyrant.png);
+    margin-right: 15px;
+}
+#second-full .left .row-six .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/PEAKY\ BLINDERS.png);
+    margin-right: 15px;
+}
+#second-full .left .row-six .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/The\ Tax\ Collector\ \(2020\).png);
+    margin-right: 15px;
+}
+#second-full .left .row-six .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/King\ Of\ Boys_\ The\ Return\ Of\ The\ King\ _\ Complete\ Season\ 1\ Download\ 720p\ HD\ -\ Plushng.png);
+    /* margin-right: 15px; */
+}
+/* ROW SEVEN -- LEFT PART */
+#second-full .left .row-seven .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Castlevania\ season\ 4\ official\ poster\ revealed\ by\ Netflix!!.png);
+    margin-right: 15px;
+}
+#second-full .left .row-seven .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Levi\ Ackermann\ \(Anime\)_Image\ Gallery.png);
+    margin-right: 15px;
+}
+#second-full .left .row-seven .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Fire\ Force\ Lights\ up\ Its\ Second\ Cour\ Key\ Visual.png);
+    margin-right: 15px;
+}
+#second-full .left .row-seven .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Amazon_com_\ Diamond\ Painting\ Kits\ for\ Adults\ DIY\ Anime\ Demon\ Slayer\ Diamond\ Art\ 5D\ Paint\ with\ Diamonds\ Full\ Drill\ Gem\ Art\ Cross\ Stitch\ Arts\ Embroidery\,\ Home\ Wall\ Decoration\ 12_\ X\ 16_.png);
+}
+/* ROW EIGHT -- LEFT PART */
+#second-full .left .row-eight .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/17e02ff2-c2a9-48df-afc8-bcdc931ba8ee.png);
+    margin-right: 15px;
+}
+#second-full .left .row-eight .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/sandman.png);
+    margin-right: 15px;
+}
+#second-full .left .row-eight .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/Morbius\ \(film\).png);
+    margin-right: 15px;
+}
+#second-full .left .row-eight .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/arcane\ secret\ cinema\ poster\,\ league\ of\ legends\ netflix.png);
+}
+/* ROW NINE -- LEFT PART */
+#second-full .left .row-nine .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/VENOM.png);
+    margin-right: 15px;
+}
+#second-full .left .row-nine .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/unchattered.png);
+    margin-right: 15px;
+}
+#second-full .left .row-nine .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/extraction.png);
+    margin-right: 15px;
+}
+#second-full .left .row-nine .bottom .four{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/bullet\ train.png);
+}
+/* ROW TEN -- LEFT PART */
+#second-full .left .row-ten .bottom .one{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/365-this-day.png);
+    margin-right: 15px;
+}
+#second-full .left .row-ten .bottom .two{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/THE\ LAST\ KINGDOM\ 1.png);
+    margin-right: 15px;
+}
+#second-full .left .row-ten .bottom .three{
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.6) 70%), url(../images/london-has-fallen.png);
+    margin-right: 15px;
+}
+#second-full .left .row-ten .bottom .four{
+    background: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.9) 80%), url(../images/fasle\ step.png);
+
+}
+/* FOOTER */
+footer{
+    min-height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    color: white;
+    /* border-top: 5px solid #181616; */
+}
+footer .socials{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+footer .socials span{
+    margin-bottom: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+footer .socials span img{
+    margin-right: 5px;
+}
+footer .socials span.twi{
+    margin-bottom: 0px;
+}
+footer .links{
+    display: flex;
+    height: 20vh;
+}
+footer .links div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+footer .links a{
+    text-decoration: none;
+    color: rgb(179, 176, 176);
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+}
+footer .links a.bot{
+    margin-bottom: 0px;
+}
+footer .links a:hover{
+    color: white;
+    transition: all 250ms ease-in-out;
+}
