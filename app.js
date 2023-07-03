@@ -8,3 +8,6 @@ btn[0].onclick = function(){
 btn[1].onclick = function(){
     slider.style.transform = "translateX(-800px)";
 }
+
+
+
